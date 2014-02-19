@@ -208,4 +208,20 @@ public class SimpleJobExplorer implements JobExplorer {
 			stepExecution.setExecutionContext(ecDao.getExecutionContext(stepExecution));
 		}
 	}
+
+	protected JobInstanceDao getJobInstanceDao() {
+		return jobInstanceDao;
+	}
+
+	protected JobExecutionDao getJobExecutionDao() {
+		return jobExecutionDao;
+	}
+
+	protected StepExecutionDao getStepExecutionDao() {
+		return stepExecutionDao;
+	}
+
+	protected ExecutionContextDao getEcDao() {
+		return ecDao;
+	}
 }
